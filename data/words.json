@@ -1,0 +1,14 @@
+[
+  { "text": "river", "level": "easy" },
+  { "text": "forest", "level": "medium" },
+  { "text": "labyrinth", "level": "hard" },
+  { "text": "sun", "level": "easy" },
+  { "text": "journey", "level": "medium" },
+  { "text": "perseverance", "level": "hard" },
+  { "text": "art", "level": "easy" },
+  { "text": "whisper", "level": "medium" },
+  { "text": "silhouette", "level": "hard" },
+  { "text": "bread", "level": "easy" },
+  { "text": "lantern", "level": "medium" },
+  { "text": "expedition", "level": "hard" }
+]
