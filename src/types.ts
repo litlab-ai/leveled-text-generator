@@ -12,4 +12,6 @@ export interface GenerationResult {
   passage: string;
   found: string[];
   missing: string[];
+  /** True when every required word appears in the passage. */
+  valid: boolean;
 }
