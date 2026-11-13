@@ -26,7 +26,10 @@ export async function generatePassage(
   const words = selectWords(bank, request.words, request.level);
   const prompt = buildPrompt(request.level, words);
   const passage = await provider.generate(prompt);
+  if (typeof passage !== "string" || passage.trim() === "") {
+    throw new Error(`The ${provider.name} provider returned an empty passage.`);
+  }
   const { found, missing } = checkRequiredWords(passage, words);
 
-  return { level: request.level, words, prompt, passage, found, missing };
+  return { level: request.level, words, prompt, passage, found, missing, valid: missing.length === 0 };
 }
